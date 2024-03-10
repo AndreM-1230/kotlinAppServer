@@ -26,3 +26,4 @@ Route::post('/users', [UserController::class, 'store']);
 //Route::delete('/users/{user}', 'UserController@destroy');
 
 Route::get('/registration', [RegistrationController::class, 'connect']);
+Route::post('/registration', [RegistrationController::class, 'store']);
