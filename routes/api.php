@@ -25,5 +25,6 @@ Route::post('/users', [UserController::class, 'store']);
 //Route::put('/users/{user}', 'UserController@update');
 //Route::delete('/users/{user}', 'UserController@destroy');
 
-Route::get('/registration', [RegistrationController::class, 'connect']);
-Route::post('/registration', [RegistrationController::class, 'store']);
+Route::get('/registration/has-user', [RegistrationController::class, 'hasUser']);
+Route::get('/registration/get-data', [RegistrationController::class, 'send']);
+Route::post('/registration/create-user', [RegistrationController::class, 'store']);
